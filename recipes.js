@@ -13,8 +13,8 @@ function getCSV(){
 // 読み込んだCSVデータを二次元配列に変換する関数convertCSVtoArray()の定義
 function convertCSVtoArray(str){ // 読み込んだCSVデータが文字列として渡される
     var result = str.split(','); // 改行を区切り文字として行を要素とした配列を生成 
-    return result; 
+    console.log(result); 
 }
  
 //最初に実行される
-document.getElementById("test").insertAdjacentHTML("beforeend","<div>" + getCSV() + "</div>");
+document.getElementById("test").insertAdjacentHTML("beforeend","<div>" + aaa + "</div>");
