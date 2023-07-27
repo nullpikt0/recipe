@@ -6,7 +6,7 @@ function getCSV(){
 	
     // レスポンスが返ってきたらconvertCSVtoArray()を呼ぶ	
     req.onload = function(){
-    return convertCSVtoArray(req.responseText); // 渡されるのは読み込んだCSVデータ
+    convertCSVtoArray(req.responseText); // 渡されるのは読み込んだCSVデータ
     }
 }
  
