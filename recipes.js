@@ -17,4 +17,4 @@ function convertCSVtoArray(str){ // 読み込んだCSVデータが文字列と�
 }
  
 //最初に実行される
-document.getElementById("test").insertAdjacentHTML("beforeend","<div>" + 'aaa' + "</div>");
+document.getElementById("test").insertAdjacentHTML("beforeend","<div>" + getCSV + "</div>");
