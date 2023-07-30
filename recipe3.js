@@ -12,7 +12,7 @@ function getCSV3(){
 function convertCSVtoArray3(str){ 
     let result = str.split(','); 
     for(let i=0; i<result.length; i++){
-    result[i] = result[i].replace(/'/g, '').replace(/\[/g, '').replace(/\]/g, '').replace(/\s+/g, '').replace('∮', '').replace('☺', '').replace('✿', '').replace('♥', '').replace('❤️', '').replace('✨', '').replace('♦', '').replace('⭐', '').replace('❣', '').replace('♡', '').replace('♪', '').replace(/u3000+/g, '').replace(/"+/g, '').replace('☺', '').replace('♪','');}
+    result[i] = result[i].replace(/'/g, '').replace(/\[/g, '').replace(/\]/g, '').replace(/\s+/g, '').replace('∮', '').replace('☺', '').replace('✿', '').replace('♥', '').replace('❤️', '').replace('✨', '').replace('♦', '').replace('⭐', '').replace('❣', '').replace('♡', '').replace('♪', '').replace(/u3000+/g, '').replace(/"+/g, '').replace('☺', '').replace('♪','').replace(/(\\|\/)/g,'');}
     let mended_result = result;
     mended_result.splice(18353, 1);
     console.log(mended_result.length)
