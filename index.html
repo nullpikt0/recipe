@@ -1,15 +1,45 @@
 <!DOCTYPE html>
-<html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>レシピを探す</title>
-</head>
-<body>
-    <h1>レシピを探す</h1>
-    <h2 id="test"></h2>
-    <h2></h2> 
-    <script src="recipes.js">"use strict";</script>
-</body>
+<html lang='ja'>
+	<head>
+		<meta charset='UTF-8'>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,user-scalable=yes,initial-scale=1.0">
+        <title>レシピを検索</title>
+	</head>
+	<body>
+        <h1>レシピを検索</h1>
+		<h2>食材１つからレシピを検索</h2>
+		<div>
+		    <input type='text' id='txtZipCode' value="ひらがなを入力">
+			<input type='button' id='btnSubmit' value="食材１個で検索">
+            <p><input type='button' id='btnSubmitnum' value="検索結果の数を20個に絞る"></p>
+		</div>
+		<div id="test1"></div>
+        <div id="test2"></div>
+		<p>
+	    <h2>食材１つから"簡単"レシピを検索</h2>
+		<div>
+		    <input type='text' id='txtZipCode2' value="ひらがなを入力">
+			<input type='button' id='btnSubmit2' value="食材１個で検索">
+			<p><input type='button' id='btnSubmitnum2' value="検索結果の数を20個に絞る"></p>
+		</div>
+			<div id="test3"></div>
+			<div id="test4"></div>
+		</p>
+		<p>
+		<h2>食材2つからレシピを検索</h2>
+		<div>
+			<input type='text' id='txtZipCode3' value="ひらがなを入力">
+			<input type='text' id='txtZipCode3-2' value="ひらがなを入力">
+			<input type='button' id='btnSubmit3' value="食材2個で検索">
+			<p><input type='button' id='btnSubmitnum3' value="検索結果の数を20個に絞る"></p>
+		</div>
+			<div id="test5"></div>
+			<div id="test6"></div>
+		</p>
+		<script src='jquery-3.3.1.min.js'></script>
+        <script src="recipe.js">"use strict";</script>
+		<script src="recipe2.js">"use strict";</script>
+		<script src="recipe3.js">"use strict";</script>
+	</body>
 </html>
